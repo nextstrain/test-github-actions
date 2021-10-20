@@ -42,3 +42,9 @@ jobs:
             --profile nextstrain_profiles/nextstrain-gisaid \
             --set-threads tree=16 \
         |& tee build-launch.log
+      
+
+    - name: Build info
+      run: |
+        echo ${{ github.event.inputs.trial_name=='' && '--> When this job completes, a phylogenetic rebuild will be triggered' || '--> This is a trial build, and as such won't trigger a phylogenetic rebuild' }}
+
