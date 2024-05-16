@@ -6,6 +6,7 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "hello from tsibley's fork"
       - run: echo "github=$json"
         env:
           json: |
