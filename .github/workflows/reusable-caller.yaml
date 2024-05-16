@@ -1,0 +1,6 @@
+name: reusable caller
+on:
+  workflow_dispatch:
+jobs:
+  job:
+    uses: nextstrain/test-github-actions/.github/workflows/reusable.yaml@0d1fee0a171c2a8344a8aed8781fd1d32fbd82ec
